@@ -57,3 +57,10 @@ class Car:
             print(f"{self.make} going at {self.speed} km/h, with a charge of {self.charge}%")
         else:
             print(f"{self.make} cannot accelerate. Battery is empty.")
+
+        // 4. Testing EV Class:
+
+        tesla = EV('Tesla', 120, 23)
+        tesla.accelerate()
+        tesla.chargeBattery(50) 
+        tesla.accelerate() 
