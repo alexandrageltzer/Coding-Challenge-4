@@ -29,3 +29,14 @@ class Car:
         print(f"{self.make} going at {self.speed} km/h")
 
     // 2. Charge Battery Method:
+
+    class EV(Car):
+    def __init__(self, make, speed, charge):
+        super().__init__(make, speed)
+        self.charge = charge
+
+    def chargeBattery(self, chargeTo):
+        self.charge = chargeTo
+        print(f"{self.make} charged to {self.charge}%")
+
+    // 3. Customize Accelerate Method:
