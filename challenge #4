@@ -1,0 +1,23 @@
+u2863-9518
+
+// immplement EV into Car Class
+class Car {
+  constructor(brand, speed) {
+    this.brand = brand;
+    this.speed = speed;
+  }
+
+  accelerate() {
+    this.speed += 10;
+    console.log(`${this.brand} accelerated to ${this.speed} km/h`);
+  }
+
+  brake() {
+    this.speed -= 10;
+    console.log(`${this.brand} slowed down to ${this.speed} km/h`);
+  }
+}
+class EV extends Car {
+  constructor(brand, speed, charge) {
+    super(brand, speed);
+    this.charge = charge;
