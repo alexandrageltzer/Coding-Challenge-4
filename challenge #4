@@ -36,3 +36,12 @@ accelerate() {
   }
 }
 
+// Test Data
+const tesla = new EV('Tesla', 120, 23);
+console.log("Initial State:");
+console.log(`Brand: ${tesla.brand}, Speed: ${tesla.speed} km/h, Charge: ${tesla.charge}%`);
+tesla.accelerate();
+tesla.brake();
+tesla.chargeBattery(50);
+console.log("After Operations:");
+console.log(`Brand: ${tesla.brand}, Speed: ${tesla.speed} km/h, Charge: ${tesla.charge}%`);
