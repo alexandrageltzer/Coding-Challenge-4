@@ -28,3 +28,11 @@ chargeBattery(chargeTo) {
     console.log(`${this.brand} battery charged to ${this.charge}%`);
   }
 
+//customize accelerate method
+accelerate() {
+    super.accelerate();
+    this.charge -= 1;
+    console.log(`${this.brand} going at ${this.speed} km/h, with a charge of ${this.charge}%`);
+  }
+}
+
