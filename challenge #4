@@ -21,3 +21,10 @@ class EV extends Car {
   constructor(brand, speed, charge) {
     super(brand, speed);
     this.charge = charge;
+
+// charge battery method
+chargeBattery(chargeTo) {
+    this.charge = chargeTo;
+    console.log(`${this.brand} battery charged to ${this.charge}%`);
+  }
+
